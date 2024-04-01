@@ -13,7 +13,7 @@ services:
     volumes:
       - wordpress-volume:/var/www/html
     networks:
-      - departure
+      - arrival
   mariadb:
     build:
       context: ./services/mariadb
@@ -24,11 +24,10 @@ services:
     volumes:
       - mariadb-volume:/var/lib/mysql
     networks:
-      - departure
+      - arrival
 volumes:
   wordpress-volume:
   mariadb-volume:
 
 networks:
-  departure:
   arrival:
