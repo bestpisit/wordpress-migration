@@ -4,7 +4,7 @@ services:
   wordpress: 
     image: wordpress
     ports:
-      - 80:80
+      - 8080:80
     environment:
       - WORDPRESS_DB_HOST=mariadb
       - WORDPRESS_DB_USER=root
